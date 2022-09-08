@@ -1,0 +1,330 @@
+header{
+    overflow: hidden;
+}
+header .before{
+    position: relative;
+    height: 50vh;
+    width: 100%;
+}
+header nav{
+    height: 100px;
+}
+header .before img{
+    height: 50vh;
+    width: 100%;
+}
+header .before::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right , rgba(41, 19, 241, 0.808) ,rgba(73, 252, 73, 0.575));
+    z-index: 1;
+}
+header .info{
+    left: 20%;
+    top: calc(30%);
+    width: 600px;
+    height: 500px;
+    z-index: 22;
+    position: absolute;
+    color: #fff;
+}
+header .info h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+header .info p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+header .info a{
+    border-radius: 30px;
+    font-size: 20px;
+    margin-left:0;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 15px;
+}
+.bi-facebook{
+    color: rgb(75, 75, 253);
+}
+.bi-linkedin{
+    color: rgb(9, 48, 131)
+}
+.bi-twitter{
+    color: rgb(16, 146, 233)
+}
+.do ul{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    header nav .container{
+        padding: 0 20px;
+    }
+    header .info{
+        width: 300px;
+        left: 10%;
+        top: calc(10%);
+    }
+    .do ul{
+        display: block;
+    }
+}
+@media only screen and (min-width: 600px) {
+    header nav .container{
+        padding: 0 20px;
+    }
+    header .info{
+        width: 400px;
+        top: calc(10%);
+    }
+    .do ul{
+        display: block;
+    }
+}
+@media only screen and (min-width: 768px) {
+    header nav .container{
+        padding: 0 20px;
+    }
+    header .info{
+        width: 600px;
+        left: 10%;
+        top: calc(35%);
+    }
+    .do ul{
+        display: block;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .do ul{
+        display: none;
+    }
+}
+/* end header ########################################*/
+.contact{
+    min-height: 100vh;
+    overflow: hidden;
+}
+.contact .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+.contact .container .two{
+    width: 60%;
+    margin: auto;
+}
+.contact .container .two h1{
+    font-weight: 600;
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+}
+.contact .container .one{
+    width: 30%;
+    margin: auto;
+}
+.contact .container h2{
+    font-size: 30px;
+    /* text-align: center; */
+    margin: auto;
+}
+.contact .container p{
+    font-size: 20px;
+    color: #999;
+    /* text-align: center; */
+    margin: auto;
+}
+.contact .container .box form{
+    width: 100%;
+    height: 100%;
+}
+.contact .container .box form input{
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #888;
+    border: 1px solid #ccc;
+}
+.contact .container .box form textarea,
+a{
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    margin: 20px
+}
+@media only screen and (max-width: 600px) {
+    .contact .container{
+        flex-direction: column;
+    }
+    .contact .container .one,
+    .contact .container .two{
+        width: 80%;
+    }
+    .contact .container .box form input,
+    .contact .container .box form textarea,
+    a,
+    .contact .container h2,
+    .contact .container p{
+        text-align: center;
+        margin: auto;
+        margin: 20px auto;
+    }
+
+}
+@media only screen and (min-width: 600px) {
+    .contact .container{
+        flex-direction: column;
+    }
+    .contact .container .one,
+    .contact .container .two{
+        width: 80%;
+    }
+    .contact .container .box form input,
+    .contact .container .box form textarea,
+    a,
+    .contact .container h2,
+    .contact .container p{
+        text-align: center;
+        margin: auto;
+        margin: 20px auto;
+    }
+} 
+@media only screen and (min-width: 768px) {
+    .contact .container{
+        flex-direction: column;
+    }
+    .contact .container .one,
+    .contact .container .two{
+        width: 80%;
+    }
+    .contact .container .box form input,
+    .contact .container .box form textarea,
+    a,
+    .contact .container h2,
+    .contact .container p{
+        text-align: center;
+        margin: auto;
+        margin: 20px auto;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .contact .container{
+        flex-direction: row;
+    }
+    .contact .container .one{
+        width: 60%
+    }
+    .contact .container .two{
+        width: 60%;
+    }
+    .contact .container .box form input,
+    .contact .container .box form textarea,
+    a,
+    .contact .container h2,
+    .contact .container p{
+        width: 100%;
+    }
+}
+/* end contact ############################ */
+footer{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+footer .box{
+    width: 300px;
+    height: 250px;
+}
+footer .box h1{
+    font-size: 30px;
+    color: #000;
+    font-weight: 700;
+    margin-top: 20px;
+}
+footer .box p{
+    font-size: 18px;
+    color: rgb(112, 112, 112);
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all .5s;
+}
+footer .box p:hover{  
+    color: rgb(58, 166, 255);
+}
+footer .box div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+    footer{
+        flex-direction: column;
+        padding-bottom: 70px;
+    }
+    footer .box{
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    footer .box form input, 
+    footer .box form a{  
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 600px){
+    footer{
+        flex-direction: column;
+    }
+    footer .box{
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    footer .box form input, 
+    footer .box form a{  
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px){
+    footer{
+        flex-flow: row wrap;
+    }
+    footer .box{
+        width: 300px;
+        margin-bottom: 30px;
+        height: 300px;
+    }
+}
+@media only screen and (min-width: 992px){
+    footer{
+        flex-direction: row;
+    }
+    footer .box{
+        width: 350px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    footer .box{
+        width: 300px;
+
+    }
+}
+.end{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(22, 22, 22);
+    color: #fff;
+    font-size: 20px;
+}

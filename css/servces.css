@@ -1,0 +1,319 @@
+header{
+    overflow: hidden;
+}
+header .before{
+    position: relative;
+    height: 50vh;
+    width: 100%;
+}
+header nav{
+    height: 100px;
+}
+header .before img{
+    height: 50vh;
+    width: 100%;
+}
+header .before::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right , rgba(41, 19, 241, 0.808) ,rgba(73, 252, 73, 0.575));
+    z-index: 1;
+}
+header .info{
+    left: 20%;
+    top: calc(30%);
+    width: 600px;
+    height: 500px;
+    z-index: 22;
+    position: absolute;
+    color: #fff;
+}
+header .info h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+header .info p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+header .info a{
+    border-radius: 30px;
+    font-size: 20px;
+    margin-left:0;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 15px;
+}
+.bi-facebook{
+    color: rgb(75, 75, 253);
+}
+.bi-linkedin{
+    color: rgb(9, 48, 131)
+}
+.bi-twitter{
+    color: rgb(16, 146, 233)
+}
+.do ul{
+    display: none;
+    text-align: center;
+}
+.do ul li{
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 600px) {
+    header nav .container{
+        padding: 0 20px;
+    }
+    header .info{
+        width: 300px;
+        left: 10%;
+        top: calc(10%);
+    }
+    .do ul{
+        display: block;
+    }
+}
+@media only screen and (min-width: 600px) {
+    header nav .container{
+        padding: 0 20px;
+    }
+    header .info{
+        width: 400px;
+        top: calc(10%);
+    }
+    .do ul{
+        display: block;
+    }
+}
+@media only screen and (min-width: 768px) {
+    header nav .container{
+        padding: 0 20px;
+    }
+    header .info{
+        width: 600px;
+        left: 10%;
+        top: calc(35%);
+    }
+    .do ul{
+        display: block;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .do ul{
+        display: none;
+    }
+}
+/* end header ########################################*/
+.high{
+    margin: 50px auto;
+}
+.high h1{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.high .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.high .content .box{
+    width: 350px;
+    margin: auto;
+}
+.high .content .box{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.high .content .box img{
+    margin: 0 20px;
+}
+.high .content .box p{
+    color: #888;
+}
+/* end high ###################################### */
+.Specialities {
+    padding-top: 20px;
+    margin-top: 50px;
+    min-height: 550px;
+    background-color: rgb(224, 224, 224);
+}
+.Specialities h1{
+    text-align: center;
+}
+.Specialities .content{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.Specialities .card{
+    width: 350px;
+}
+@media only screen and (max-width: 600px) {
+    .Specialities .content{
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .Specialities .content{
+        flex-direction: column;
+    }
+    .Specialities .card{
+        margin-bottom: 30px;
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .Specialities .content{
+        flex-direction: column;
+    }
+    .Specialities .card{
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .Specialities .content{
+        flex-direction: row;
+    }
+    .Specialities .card{
+        width: 350px;
+    }
+}
+/* end Specialities #################################*/
+.Medical{
+    padding: 80PX;
+    margin: 50px auto;
+    text-align: center;
+    background-color: rgba(37, 37, 245, 0.911);
+}
+.Medical .content div{
+    justify-content: center;
+    display: flex;
+}
+.Medical .content div img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.Medical .content h2{
+    color: #fff;
+    font-size: 40px;
+}
+.Medical .content h3{
+    color: #fff;
+    font-size: 50px;
+}
+.Medical .content a{
+    font-weight: 600;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    font-size: 20px;
+    color: #fff;
+}
+.Medical .content .one{
+    background-color: #fff;
+    color: #000;
+}
+
+/* end Medical */
+footer{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+footer .box{
+    width: 300px;
+    height: 250px;
+}
+footer .box h1{
+    font-size: 30px;
+    color: #000;
+    font-weight: 700;
+    margin-top: 20px;
+}
+footer .box p{
+    font-size: 18px;
+    color: rgb(112, 112, 112);
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all .5s;
+}
+footer .box p:hover{  
+    color: rgb(58, 166, 255);
+}
+footer .box div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+    footer{
+        flex-direction: column;
+        padding-bottom: 70px;
+    }
+    footer .box{
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    footer .box form input, 
+    footer .box form a{  
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 600px){
+    footer{
+        flex-direction: column;
+    }
+    footer .box{
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    footer .box form input, 
+    footer .box form a{  
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px){
+    footer{
+        flex-flow: row wrap;
+    }
+    footer .box{
+        width: 300px;
+        margin-bottom: 30px;
+        height: 300px;
+    }
+}
+@media only screen and (min-width: 992px){
+    footer{
+        flex-direction: row;
+    }
+    footer .box{
+        width: 350px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    footer .box{
+        width: 300px;
+
+    }
+}
+.end{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(22, 22, 22);
+    color: #fff;
+    font-size: 20px;
+}
